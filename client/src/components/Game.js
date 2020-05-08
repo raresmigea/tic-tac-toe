@@ -7,13 +7,9 @@ class Game extends React.Component {
     data: '',
   };
   componentDidMount = () => {
-    // Make sure to change the (localhost) on the line bellow
-    // to the public DNS of your EC2 instance
-    axios.get('http:localhost:3001/here').then((res) => {
-      console.log('res::::::::: ', res);
-      const dataFromServer = res.data;
-      this.setState({ data: dataFromServer });
-    });
+    fetch('http://localhost:3000/here')
+      .then((res) => res.text())
+      .then((res) => this.setState({ data: res }));
   };
 
   render() {

@@ -11,6 +11,7 @@ app.use(cors());
 
 app.get('/here', function (req, res) {
   res.send('hello from the back-end.');
+  res.end();
 });
 
 const port = process.env.PORT || 3000;

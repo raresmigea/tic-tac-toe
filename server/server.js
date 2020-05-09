@@ -10,7 +10,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 app.get('/here', function (req, res) {
-  res.send({ val: 'Y' });
+  res.send('*');
   res.end();
 });
 

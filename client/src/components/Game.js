@@ -1,6 +1,5 @@
 import React from 'react';
 import Board from './Board';
-import axios from 'axios';
 
 class Game extends React.Component {
   state = {
@@ -21,10 +20,7 @@ class Game extends React.Component {
           </p>
           <Board value={this.state.data} />
         </div>
-        <div className='game-info'>
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
+        <div className='game-info'></div>
       </div>
     );
   }

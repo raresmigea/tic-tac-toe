@@ -7,7 +7,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(cors());
 
-app.get('/here', function (req, res) {
+app.get('/players', function (req, res) {
   res.send('a b');
   res.end();
 });

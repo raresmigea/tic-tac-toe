@@ -6,7 +6,7 @@ class Game extends React.Component {
     data: '',
   };
   componentDidMount = () => {
-    fetch('http://localhost:3000/here')
+    fetch('http://localhost:3000/players')
       .then((res) => res.text())
       .then((res) => this.setState({ data: res.split(' ') }));
   };

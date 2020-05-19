@@ -8,7 +8,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 app.get('/players', function (req, res) {
-  res.send('a b');
+  res.send('X O');
   res.end();
 });
 

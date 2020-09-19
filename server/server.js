@@ -9,7 +9,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 app.get('/players', function (req, res) {
-  res.send('X O');
+  res.send('x o');
   res.end();
 });
 
